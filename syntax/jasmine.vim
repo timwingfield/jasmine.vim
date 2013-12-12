@@ -9,7 +9,7 @@ else
 endif
 
 syn case match
-syn keyword specFunctions afterEach beforeEach describe it expect addMatchers spyOn not context
+syn keyword specFunctions afterEach beforeEach describe it expect addMatchers spyOn not context Given When Then And
 syn keyword specDisabled xit xdescribe
 syn keyword specSpys andCallThrough andReturn andThrow andCallFake callCount argsForCall mostRecentCall
 syn keyword specAsync runs waits waitsFor
