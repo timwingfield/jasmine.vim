@@ -1,12 +1,30 @@
-# Describe
-snippet d [des] describe "...". -> ...
-	describe "${1:description}", ->
-		${2}
-	${3}
+# Describe and context
 snippet des
 	describe "${1:description}", ->
-		${2}
-	${3}
+
+snippet con
+	context "${1:description}", ->
+
+snippet g [giv]
+	Given -> ${1}
+
+snippet w [whe]
+	When  -> ${1}
+
+snippet t [the]
+	Then  -> ${1}
+
+snippet tte
+	Then  -> expect(${1:condition}).toEqual(${2})
+
+snippet ttb
+	Then  -> expect(${1:condition}).toBe(${2})
+
+snippet thbc
+	Then  -> expect(${1:target}).toHaveBeenCalled()
+
+snippet thbcw
+	Then  -> expect(${1:target}).toHaveBeenCalledWith(${2:arguments})
 
 # Describe with beforeEach and it
 snippet d [desc] describe("...". function() { beforeEach()... it...})
